@@ -6,6 +6,10 @@ RUN apk update
 RUN apk add -U gzip \
                nginx \
                curl-dev \
+               libpng-dev \
+               postgresql-dev \
+               libxml2-dev \
+               libzip-dev \
                tar
 
 RUN docker-php-ext-install curl gd json mysqli pdo pdo_mysql pdo_pgsql opcache pgsql phar simplexml xml zip
