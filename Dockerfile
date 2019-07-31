@@ -5,6 +5,7 @@ WORKDIR /var/www/html
 RUN apk update
 RUN apk add -U gzip \
                nginx \
+               libcurl \
                curl \
                tar
 
