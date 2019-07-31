@@ -1,0 +1,11 @@
+---
+kind: pipeline
+name: revive-docker
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: build
+    image: hello-world
