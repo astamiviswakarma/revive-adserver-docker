@@ -5,8 +5,7 @@ WORKDIR /var/www/html
 RUN apk update
 RUN apk add -U gzip \
                nginx \
-               libcurl \
-               curl \
+               curl-dev \
                tar
 
 RUN docker-php-ext-install curl gd json mysqli pdo pdo_mysql pdo_pgsql opcache pgsql phar simplexml xml zip
