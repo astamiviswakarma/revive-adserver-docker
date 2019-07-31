@@ -7,5 +7,11 @@ platform:
   arch: amd64
 
 steps:
-  - name: build
-    image: hello-world
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: astamia/revive-adserver
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
